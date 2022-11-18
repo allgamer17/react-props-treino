@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana,sans-serif;
+    line-height: 1.5;
+}
+
+body {
+    min-width: 100vw;
+    background-color: #fff;
+}
+/*header*/
+.foto-header-area{ /*ajustando o background e o flex do header*/
+    background-image: url(./src/img/photographer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 540px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-header-area { /*colando um border em volta do titulo do header*/
+    border: 1px solid silver;
+    padding: 30px 45px;
+    text-align: center;
+    margin-top: 190px;
+    color: #ebf1f1;
+}
+
+.titulo-header-area h1 { /*ajustando o h1(titulo 1)*/
+    font-weight: lighter;
+    font-size: 50px;
+    letter-spacing: 3px;
+}
+
+.titulo-header-area h2 { /*ajustando o  h2(titulo 2)*/
+    font-weight: lighter;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+
+
+.menu-header-area {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: -4px;
+}
+
+.menu-header-area ul{
+    background-color: white;
+    border-radius: 6px;
+    display: flex;
+    list-style: none;
+}
+
+.menu-header-area ul li{
+    text-decoration: none;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+
+/*body*/
+
+.foto-area {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100vw;
+}
+
+.foto-class {
+    width: 1000px;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+/*footer*/
+
+footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-contact-area {
+    width: 1000px;
+    background-color: #f1f1f1;
+}
+
+.texto-contact-area {
+    text-align: center;
+}
+
+.input-contact-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-contact-area p {
+    margin-left: 10px;
+}
+
+.contact-area-style {
+    margin: 10px;
+    height: 40px;
+}
+
+.input-contact-area button {
+    background-color: #7f7f7f;
+    border: none;
+}
+
+.input-contact-area button:hover {
+    background-color: #ccc;
+}
+
+@media screen and (max-width: 390px ) {
+    .foto-header-area {
+        width: 687px;
+    }
+
+    .foto-class {
+        width: 650px;
+        margin-left: 290px;
+        margin-top: 30px;
+    }
+}

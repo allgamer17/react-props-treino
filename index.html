@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <title>Jane Doe</title>
+</head>
+<body>
+    <header>
+        <div class="foto-header-area">
+            <div   div class="titulo-header-area">
+                <h1>JANE DOE</h1>
+                <h2>Photographer</h2>
+            </div>
+
+            <div class="menu-header-area">
+                <div class="menu-buttons">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Portfolio</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--esta div esta sendo direcionada para o script para renderizar as fotos-->
+    <div id="root"></div>
+
+    
+
+    <footer>
+        <div class="footer-contact-area">
+            <div class="texto-contact-area">
+                <h2 class="titulo-contact">Contact</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam minus commodi iste fugit odio, blanditiis id quos quibusdam cupiditate neque odit quam ab! Quas pariatur beatae laboriosam perferendis ab excepturi!</p>
+            </div>
+            <div class="input-contact-area">
+                <p>Name</p>
+                <input class="contact-area-style" type="text" placeholder="Example: Allef Moises">
+                <p>Email</p>
+                <input class="contact-area-style" type="email" placeholder="Example: usuario123@gmail.com">
+                <p>Message</p>
+                <input class="contact-area-style" type="text" placeholder="Example: A text here">
+                <button class="contact-area-style">Send</button>
+            </div>
+        </div>
+    </footer>
+
+
+    
+    <script type="text/babel" src="./script.js">// parte de react do site, renderiza as fotos na div 'root'
+       
+    </script>
+</body>
+</html>
